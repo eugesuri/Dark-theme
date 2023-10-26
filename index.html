@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cycling- My hobby 🚴🏻‍♀️</title>
+    <style>
+      body {
+        background: plum;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid plum;
+        background: white;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: plum;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: grey;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+
+      .theme-button {
+        font-size: 10px;
+        background: black;
+        color: white;
+        padding: 5 8px;
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+
+      .cycling-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .cycling-intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+      }
+      .dark {
+        background: black;
+        color: white;
+      }
+      .dark.container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>What is Cycling? 🚴🏻‍♀️</h1>
+      <h2>My favorite escape</h2>
+      <a href="https://www.britannica.com/sports/cycling" target="_blank">
+        <img
+          src="https://images.unsplash.com/photo-1475666675596-cca2035b3d79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y3ljbGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          alt=""
+          class="cycling-intro-picture"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://images.unsplash.com/photo-1444491741275-3747c53c99b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3ljbGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1452573992436-6d508f200b30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGN5Y2xpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1609398078690-6b15f6eb551e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGN5Y2xpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+          alt=""
+        /><img
+          src="https://www.bern.com/assets/images/c/emmental_lueg-5b48fbec.jpg"
+          alt=""
+        />
+      </div>
+      <p>
+        Cycling, use of a bicycle for sport, recreation, or transportation. The
+        sport of cycling consists of professional and amateur races, which are
+        held mostly in continental Europe, the United States, and Asia. The
+        recreational use of the bicycle is widespread in Europe and the United
+        States. Cycling as a sport officially began on May 31, 1868, with a
+        1,200-metre (1,312-yard) race between the fountains and the entrance of
+        Saint-Cloud Park (near Paris). The winner was James Moore, an
+        18-year-old expatriate Englishman from Paris. On November 7, 1869, the
+        first city-to-city race was held between Paris and Rouen; again Moore
+        was the winner, having covered the 135 km (84 miles) in 10 hours 25
+        minutes, including time spent walking his bicycle up the steeper hills.
+        While road racing became common within a few years in continental
+        Europe, in England the deteriorated conditions of the roads made them
+        unsuitable, and therefore the sport there focused on the track or time
+        trials.
+        <br /><br />
+        📖
+        <a href="https://en.wikipedia.org/wiki/Cycling">
+          <strong> Read on Wikipedia </strong>
+        </a>
+      </p>
+
+      <button>Learn Cycling 🚴🏻‍♀️🥰</button>
+    </div>
+    <footer>
+      Coded with 💗 by
+      <a href="https://www.instagram.com/euge.suri/" target="_blank"
+        >Eugenia Brunetti Ehnimb</a
+      >
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
